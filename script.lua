@@ -199,7 +199,7 @@ G2L["19"] = Instance.new("UIDragDetector", G2L["2"]);
 local function C_e()
 local script = G2L["e"];
 	script.Parent.MouseButton1Click:Connect(function()
-		local plr = game.Players.LocalPlayers
+		local plr = game.Players.LocalPlayer
 		plr.Backpack:FindFirstChild("Glove").Speed.Value = script.Parent.Parent.Cooldown.Text
 		plr.Backpack:FindFirstChild("Glove").Power.Value = script.Parent.Parent.Cooldown.Text
 	end)
