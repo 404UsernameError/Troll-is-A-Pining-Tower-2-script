@@ -191,7 +191,7 @@ local script = G2L["d"];
 	script.Parent.MouseButton1Click:Connect(function()
 		local plr = game.Players.LocalPlayer
 		plr.Backpack:FindFirstChild("Glove").Speed.Value = script.Parent.Parent.Cooldown.Text
-		plr.Backpack:FindFirstChild("Glove").Power.Value = script.Parent.Parent.Cooldown.Text
+		plr.Backpack:FindFirstChild("Glove").Power.Value = script.Parent.Parent.Power.Text
 	end)
 end;
 task.spawn(C_d);
