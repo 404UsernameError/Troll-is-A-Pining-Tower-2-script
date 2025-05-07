@@ -198,11 +198,14 @@ G2L["19"] = Instance.new("UIDragDetector", G2L["2"]);
 -- StarterGui.ScreenGui.Frame.Frame.Activate.LocalScript
 local function C_e()
 local script = G2L["e"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local plr = game.Players.LocalPlayer
-		plr.Backpack:FindFirstChild("Glove").Speed.Value = script.Parent.Parent.Cooldown.Text
-		plr.Backpack:FindFirstChild("Glove").Power.Value = script.Parent.Parent.Cooldown.Text
-	end)
+script.Parent.MouseButton1Click:Connect(function()
+	local plr = game.Players.LocalPlayer
+	local glove = plr.Backpack:FindFirstChild("Glove") or plr.Character:FindFirstChild("Glove")
+	if glove then
+		glove.Speed.Value = script.Parent.Parent.Cooldown.Text
+		glove.Power.Value = script.Parent.Parent.Power.Text
+	end
+end)
 end;
 task.spawn(C_e);
 
