@@ -40,7 +40,7 @@ G2L["4"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fr
 
 
 -- StarterGui.ScreenGui.Frame.Frame.UICorner
-G2L["5"] = Instance.new("UICorner", G2L["3"]);
+--G2L["5"] = Instance.new("UICorner", G2L["3"]);
 
 
 
